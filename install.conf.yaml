@@ -4,4 +4,8 @@
 
 - clean: ['~']
 
-
+# casual
+- link:
+    ~/.dotfiles: ''
+    ~/.bashrc: bash/bashrc
+    ~/.tmux.conf: tmux/tmux.conf
