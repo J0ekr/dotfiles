@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for profile in ~/.profile.d/*.sh; do
+	if [ -x "$profile" ]; then
+		# shellcheck source=/dev/null
+		. "$profile"
+	fi
+done
