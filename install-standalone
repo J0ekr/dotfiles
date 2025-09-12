@@ -2,7 +2,7 @@
 
 set -e
 
-BASE_CONFIG="base"
+BASE_CONFIG="install.conf"
 CONFIG_SUFFIX=".yaml"
 
 META_DIR="meta"
