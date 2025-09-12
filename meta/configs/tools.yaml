@@ -1,0 +1,12 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.profile.d/10-tools.sh: shell/tools.sh
+    ~/.profile.d/20-aliases.sh: shell/aliases.sh
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

@@ -4,21 +4,14 @@
 
 - clean: ['~']
 
-- create:
-    - ~/.profile.d
-    - ~/.config/htop
-
 - link:
-    ~/.dotfiles: ''
     ~/.bashrc: bash/bashrc
     ~/.bash_profile: bash/bashrc
     ~/.tmux.conf: tmux/tmux.conf
     ~/.gitconfig: git/gitconfig
     ~/.config/htop/htoprc: top/htoprc
     ~/.profile.d/load: shell/load
-    ~/.profile.d/10-tools.sh: shell/tools.sh
     ~/.profile.d/20-aliases.sh: shell/aliases.sh
-    ~/.profile.d/30-ros.sh: shell/ros.sh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

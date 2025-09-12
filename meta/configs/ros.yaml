@@ -1,0 +1,11 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.profile.d/30-ros.sh: shell/ros.sh
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

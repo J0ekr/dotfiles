@@ -1,0 +1,15 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- create:
+    - ~/.profile.d
+    - ~/.config/htop
+
+- link:
+    ~/.dotfiles: ''
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
